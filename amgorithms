@@ -1,0 +1,14 @@
+// DFS algo on trees.
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+void DFS(int node, parent){
+
+for(auto it:adj[node]){
+if(it!=parent)
+
+DFS(it,node);
+}
+
+}
